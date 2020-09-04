@@ -688,7 +688,18 @@ h6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  padding: 16px 41px 15px 42px;
+  padding: 10px 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 204px;
+  min-height: 49px;
   letter-spacing: 1px;
 }
 
