@@ -329,7 +329,7 @@ function inputs_init(inputs) {
 					//'+38(999) 999 9999'
 					//'+375(99)999-99-99'
 					input.classList.add('_mask');
-					Inputmask("+375 (99) 9999999", {
+					Inputmask("+7(999) 999 9999", {
 						//"placeholder": '',
 						clearIncomplete: true,
 						clearMaskOnLostFocus: true,
@@ -438,11 +438,11 @@ $(document).ready(function() {
 		} else {
 			document.querySelector(`.${classNameElem}`).classList.remove('open');
 			 document.querySelector('.top-header').classList.remove('open');
-			 document.querySelector(`.${classNameElem}`).classList.add('close');
+			 // document.querySelector(`.${classNameElem}`).classList.add('close');
 
-			 	setTimeout(() => {
-			 		document.querySelector(`.${classNameElem}`).classList.remove('close');
-			 	}, 400)
+			 // 	setTimeout(() => {
+			 // 		document.querySelector(`.${classNameElem}`).classList.remove('close');
+			 // 	}, 400)
 			isOpen = false;
 		}
 
