@@ -494,9 +494,11 @@ $(document).ready(function() {
 {
 	if($('.slider-visit').length>0) {
 		$('.slider-visit').slick({
-		  infinite: true,
+		  infinite: false,
 		  slidesToShow: 1,
-		  slidesToScroll: 1
+		  slidesToScroll: 1,
+		  prevArrow: '<div class="slick-arrow slick-prev"><span class="icon-chevron-thin-left"></span></div>',
+		  nextArrow: '<div class="slick-arrow slick-next"><span class="icon-chevron-thin-right"></span></div>',
 		});
 	}
 }
