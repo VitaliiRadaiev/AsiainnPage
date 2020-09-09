@@ -504,4 +504,102 @@ $(document).ready(function() {
 }
 // === // slider-visit ==================================================================
 
+
+
+// === delivery-2 tab handler ==================================================================
+{
+	let block = document.querySelector('.aside-delivery2');
+	if(block) {
+		let top = block.querySelector('.aside-delivery2__top');
+		let bottom = block.querySelector('.aside-delivery2__bottom');
+
+		top.children[0].classList.add('_first');
+		top.children[1].classList.add('_second');
+		
+		bottom.children[0].classList.add('_first');
+		bottom.children[1].classList.add('_second');
+
+		let firstBtn = top.querySelector('._first');
+		let secondBtn = top.querySelector('._second');
+		let firstTab = bottom.querySelector('._first');
+		let secondTab = bottom.querySelector('._second');
+
+		firstBtn.addEventListener('click', () => {
+			firstBtn.classList.add('active');
+			firstTab.classList.add('active');
+
+			secondBtn.classList.remove('active');
+			secondTab.classList.remove('active');
+		})
+
+		secondBtn.addEventListener('click', () => {
+			secondBtn.classList.add('active');
+			secondTab.classList.add('active');
+			
+			firstBtn.classList.remove('active');
+			firstTab.classList.remove('active');
+
+		})
+
+	}
+}
+// === // delivery-2 tab handler ==================================================================
+
 });
+
+
+// ==== //  google map ===============
+
+{
+
+
+	let isMap = document.getElementById("map");
+	if(isMap) {
+		var map;
+
+		let center = {
+			lat: 55.781977,
+			lng: 37.469893,
+		}
+
+		let markerPosition = {
+			lat: 55.781977,
+			lng: 37.469893,
+		}
+
+		// Функция initMap которая отрисует карту на странице
+		function initMap() {
+
+			// В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+			map = new google.maps.Map(document.getElementById('map'), {
+				// При создании объекта карты необходимо указать его свойства
+				// center - определяем точку на которой карта будет центрироваться
+				center: {lat: center.lat, lng: center.lng},
+				// zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+
+				zoom: 17,
+
+				// Добавляем свои стили для отображения карты
+				//styles: 
+			});
+
+			// Создаем маркер на карте
+			var marker = new google.maps.Marker({
+
+				// Определяем позицию маркера
+			    position: {lat: markerPosition.lat, lng: markerPosition.lng},
+
+			    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+			    map: map,
+
+			    // Пишем название маркера - появится если навести на него курсор и немного подождать
+			    title: 'бульвар Генерала Карбышева',
+
+			    // Укажем свою иконку для маркера
+			   // icon: 'img/contact/googlMarker.svg',
+			});
+
+		}
+	}
+}
+
