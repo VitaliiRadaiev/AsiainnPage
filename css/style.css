@@ -6413,7 +6413,7 @@ textarea.input {
 
   .aside-delivery3__list li:not(:last-child) {
     margin-bottom: 0;
-    margin-right: 29px;
+    padding-right: 29px;
   }
 
   .aside-delivery3__list li:last-child {
@@ -6989,7 +6989,7 @@ textarea.input {
   }
 
   .aside-delivery3__list li:not(:last-child) {
-    margin-right: 24px;
+    padding-right: 24px;
   }
 
   .aside-delivery3__list li > a {

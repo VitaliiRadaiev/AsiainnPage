@@ -650,8 +650,20 @@ $(document).ready(function() {
 			deliveryMenu.children[i].dataset.count = i;
 		}
 
-		let list = document.querySelector('.aside-delivery3__list')
+		let list = document.querySelector('.aside-delivery3__list');
+		const leftScroll = (index, widthElem) => {
+			let count = 0;
+
+			for(let i = 0; i < index; i++) {
+				count += list.children[i].getBoundingClientRect().width;
+			}
+
+			list.scrollLeft = count - widthElem;
+		}
+
 		window.addEventListener('scroll', () => {
+			//console.log(list.scrollLeft)
+
 			for(let item of deliveryMenu.children) {
 				if(item.getBoundingClientRect().top <= (document.documentElement.clientHeight / 2) && item.getBoundingClientRect().bottom >= (document.documentElement.clientHeight / 2)) {
 					for(let i of list.children) {
@@ -659,6 +671,7 @@ $(document).ready(function() {
 
 						if(i == list.children[item.dataset.count]) {
 							i.classList.add('active');
+							leftScroll(item.dataset.count, i.getBoundingClientRect().width / 2);
 						}
 					}
 				}
