@@ -6428,6 +6428,10 @@ textarea.input {
     padding-top: 105px;
   }
 
+  .delivery-menu__title {
+    padding-top: 3px;
+  }
+
   .basket {
     top: 60px;
     height: calc(100vh - 60px);
@@ -7000,6 +7004,7 @@ textarea.input {
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 23px;
+    padding-top: 0;
   }
 
   .dish-list__text-box {
