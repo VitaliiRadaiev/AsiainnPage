@@ -450,6 +450,7 @@ $(document).ready(function() {
 	$('.burger').click((e) => burgerBtnAnimation(e));
 }
 // === Burger Handler =====================================================================	;
+	document.querySelector('body').classList.add('isload');
 
 // === Проверка, поддержка браузером формата webp ==================================================================
 
@@ -545,6 +546,76 @@ $(document).ready(function() {
 }
 // === // delivery-2 tab handler ==================================================================
 
+
+
+// === basket handler ==================================================================
+{
+	let basketHead = document.querySelector('.basket-head ');
+	if(basketHead) {
+		let btn = document.querySelector('.basket-head__icon');
+		let btnClose = document.querySelector('.basket-head__close-btn');
+		let basket = document.querySelector('.basket');
+		let head = document.querySelector('.head-delivery_3');
+		let menu = document.querySelector('.delivery-menu');
+		let bodyDelivery_3 = document.querySelector('.body-delivery_3');
+
+		btn.addEventListener('click', () => {
+			basketHead.classList.toggle('_open');
+			basket.classList.toggle('_open');
+			head.classList.toggle('_isBasketOpen');
+			menu.classList.toggle('_isBasketOpen');
+			bodyDelivery_3.classList.toggle('_isBasketOpen');
+		});
+
+		btnClose.addEventListener('click', () => {
+			basketHead.classList.remove('_open');
+			basket.classList.remove('_open');
+			head.classList.remove('_isBasketOpen');
+			menu.classList.remove('_isBasketOpen');
+			bodyDelivery_3.classList.remove('_isBasketOpen');
+		})
+	}
+}
+// === // basket handler ==================================================================
+
+
+
+// === banner list info handler ==================================================================
+{
+	let infoBlock = document.querySelector('.banner-delivery__bottom');
+	if(infoBlock) {
+		let btn = document.querySelector('.banner-delivery__btn-mobile');
+		btn.addEventListener('click', () => {
+			btn.classList.toggle('_open');
+			$('.banner-delivery__bottom').slideToggle(300);
+		})
+	}
+}
+// === // banner list info handler ==================================================================
+
+
+// === delivery-menu scroll handler ==================================================================
+{
+	let deliveryMenu = document.querySelector('.aside-delivery3');
+	if(deliveryMenu) {
+		let list = document.querySelector('.aside-delivery3__list');
+		let dishList = document.querySelector('.delivery-menu');
+		window.addEventListener('scroll', () => {
+			let headDeliveryHeight = document.querySelector('.head-delivery_3').clientHeight;
+
+			if(deliveryMenu.getBoundingClientRect().top <= headDeliveryHeight) {
+				list.classList.add('fixed');
+				dishList.classList.add('_isListFixed');
+
+			} else {
+				list.classList.remove('fixed');
+				dishList.classList.remove('_isListFixed');
+			}
+		});
+	}
+}
+// === // delivery-menu scroll handler ==================================================================
+
 });
 
 
@@ -594,6 +665,7 @@ $(document).ready(function() {
 
 			    // Пишем название маркера - появится если навести на него курсор и немного подождать
 			    title: 'бульвар Генерала Карбышева',
+			    label: '',
 
 			    // Укажем свою иконку для маркера
 			   // icon: 'img/contact/googlMarker.svg',
