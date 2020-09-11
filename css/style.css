@@ -6545,6 +6545,10 @@ textarea.input {
     line-height: calc(8px + (6 + 6 * 0.7) * ((100vw - 320px) / 814));
   }
 
+  .contact .footer {
+    margin-top: 51px;
+  }
+
   .footer {
     padding-top: 0;
   }
