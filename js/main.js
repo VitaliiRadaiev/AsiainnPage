@@ -632,7 +632,7 @@ $(document).ready(function() {
 		  var elementClick = $(this).attr("href")
 		 	$(this).parent().addClass('active');
 		 	remeveClass($(this).parent()[0]);
-		  var destination = $(elementClick).offset().top - 115;
+		  var destination = $(elementClick).offset().top - 110;
 		  jQuery("html:not(:animated),body:not(:animated)").animate({
 		    scrollTop: destination
 		  }, 600);
@@ -654,7 +654,6 @@ $(document).ready(function() {
 		window.addEventListener('scroll', () => {
 			for(let item of deliveryMenu.children) {
 				if(item.getBoundingClientRect().top <= (document.documentElement.clientHeight / 2) && item.getBoundingClientRect().bottom >= (document.documentElement.clientHeight / 2)) {
-					console.dir(item)
 					for(let i of list.children) {
 						i.classList.remove('active');
 
