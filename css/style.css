@@ -6416,6 +6416,10 @@ textarea.input {
     margin-right: 29px;
   }
 
+  .aside-delivery3__list li:last-child {
+    padding-right: 15px;
+  }
+
   .aside-delivery3__list li > a {
     white-space: nowrap;
   }
