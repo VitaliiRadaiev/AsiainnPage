@@ -3341,7 +3341,7 @@ textarea.input {
   text-align: center;
 }
 
-.popup .close-popup {
+.popup .close-popup-btn {
   position: absolute;
   top: 24px;
   right: 26px;
@@ -3350,7 +3350,7 @@ textarea.input {
   cursor: pointer;
 }
 
-.popup .close-popup img {
+.popup .close-popup-btn img {
   width: 100%;
 }
 
