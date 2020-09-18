@@ -3848,7 +3848,11 @@ textarea.input {
 }
 
 .menu-table__nav {
-  padding: 30px 0;
+  padding: 30px 0 0;
+}
+
+.menu-table__sub-nav {
+  margin-bottom: 30px;
 }
 
 .menu-table__main-list {
@@ -3907,6 +3911,22 @@ textarea.input {
 
 .menu-table__sub-list li a.active {
   color: #000000;
+}
+
+.menu-table__tabs-content {
+  display: none;
+}
+
+.menu-table__tabs-content.active {
+  display: block;
+}
+
+.menu-table__tabs-sub-content {
+  display: none;
+}
+
+.menu-table__tabs-sub-content.active {
+  display: block;
 }
 
 .menu-table__item {
@@ -6868,7 +6888,11 @@ textarea.input {
   }
 
   .menu-table__nav {
-    padding: 15px 0px;
+    padding: 15px 0px 0;
+  }
+
+  .menu-table__sub-nav {
+    margin-bottom: 15px;
   }
 
   .menu-table__main-list li {
