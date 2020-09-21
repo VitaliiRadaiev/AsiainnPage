@@ -5481,9 +5481,11 @@ textarea.input {
 }
 
 .item-order__count {
+  width: 40px;
+  text-align: center;
   min-width: 40px;
   height: 32px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5501,9 +5503,11 @@ textarea.input {
 }
 
 .item-order__count input {
+  width: 40px;
+  text-align: center;
   min-width: 40px;
   height: 32px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7096,12 +7100,14 @@ textarea.input {
   }
 
   .item-order__count {
+    width: 31px;
     min-width: 31px;
     height: 26px;
     font-size: 12px;
   }
 
   .item-order__count input {
+    width: 31px;
     min-width: 31px;
     height: 26px;
     font-size: 12px;

@@ -705,26 +705,70 @@ $(document).ready(function() {
 			});
 		});
 
-		document.querySelectorAll('.menu-table__sub-triggers').forEach((item) => {
-			item.addEventListener('click', function(e) {
-				e.preventDefault();
-				const id = e.target.getAttribute('href').replace('#','');
 
-				document.querySelectorAll('.menu-table__sub-triggers').forEach((child) => {
-					child.classList.remove('active');
+		document.querySelectorAll('.menu-table__tabs-content').forEach((item) => {
+			item.querySelectorAll('.menu-table__sub-triggers').forEach((i) => {
+				i.addEventListener('click', function(e) {
+					e.preventDefault();
+					const id = e.target.getAttribute('href').replace('#','');
+
+					item.querySelectorAll('.menu-table__sub-triggers').forEach((child) => {
+						child.classList.remove('active');
+					});
+
+					item.querySelectorAll('.menu-table__tabs-sub-content').forEach((child) => {
+						child.classList.remove('active');
+					});
+
+					i.classList.add('active');
+					document.getElementById(id).classList.add('active');
 				});
-
-				document.querySelectorAll('.menu-table__tabs-sub-content').forEach((child) => {
-					child.classList.remove('active');
-				});
-
-				item.classList.add('active');
-				document.getElementById(id).classList.add('active');
 			});
 		});
+
+		// document.querySelectorAll('.menu-table__sub-triggers').forEach((item) => {
+		// 	item.addEventListener('click', function(e) {
+		// 		e.preventDefault();
+		// 		const id = e.target.getAttribute('href').replace('#','');
+
+		// 		document.querySelectorAll('.menu-table__sub-triggers').forEach((child) => {
+		// 			child.classList.remove('active');
+		// 		});
+
+		// 		document.querySelectorAll('.menu-table__tabs-sub-content').forEach((child) => {
+		// 			child.classList.remove('active');
+		// 		});
+
+		// 		item.classList.add('active');
+		// 		document.getElementById(id).classList.add('active');
+		// 	});
+		// });
 	}
 }
 // === // menu-table ==================================================================
+
+
+// === order-list ==================================================================
+{
+	let orderList = document.querySelector('.order-list');
+	if(orderList) {
+		orderList.querySelectorAll('.item-order__quantity').forEach((item) => {
+			item.addEventListener('click', (e) => {
+
+				if(e.target.closest('.item-order__plus')) {
+					item.querySelector('input').value = +item.querySelector('input').value + 1;
+				}
+
+				if(e.target.closest('.item-order__minus')) {
+					if(item.querySelector('input').value > 1) {
+						item.querySelector('input').value = +item.querySelector('input').value - 1;
+					}
+				}
+			})
+		})
+	}
+}
+// === // order-list ==================================================================
 
 
 
