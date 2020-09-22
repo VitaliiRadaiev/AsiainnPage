@@ -55,15 +55,18 @@
         <li><a href="delivery1.html">Delivery-1</a></li>
         <li><a href="delivery2.html">Delivery-2</a></li>
         <li><a href="delivery3.html">Delivery-3</a></li>
+        <li><a href="delivery4.html">Delivery-4</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="popup-link" href="#orderPopup">Popup-1</a></li>
+        <li><a class="popup-link" href="#tobookPopup">Popup-1</a></li>
         <li><a class="popup-link" href="#popupMess">Popup-2</a></li>
         <li><a class="popup-link" href="#registeringPopup">Popup-3</a></li>
+        <li><a class="popup-link" href="#verifiPopup">Popup-4</a></li>
+        <li><a class="popup-link" href="#orderPopup">Popup-5</a></li> 
     </ol>
 
 
 
-    <div class="popup" id="orderPopup">
+    <div class="popup" id="tobookPopup">
 	<div class="popup_body">
 		<div class="popup_content">
 			<div class="close-popup-btn close-popup">
@@ -251,6 +254,96 @@
 						<div class="form-regist-log__submit-wrap">
 							<button class="btn-submit" type="submit"><span>ЗАРЕГЕСТРИРОВАТЬСЯ</span></button>
 						</div>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+    <div class="popup popupLogin" id="verifiPopup">
+	<div class="popup_body">
+		<div class="popup_content">
+			<div class="close-popup-btn close-popup">
+				<img src="img/icons/close.svg" alt="close">
+			</div>
+			<div class="popup_form-wrap">
+				<form action="/" class="form-verifi">
+					<div class="form-verifi__title">
+						Введите код
+					</div>
+					<div class="form-verifi__subtitle">
+						Мы отправили СМС с кодом верефикации на номер 222 333 222
+					</div>
+					<div class="form-verifi__item form-verifi__item_pass">
+						<div class="form-verifi__item-wrap">
+							<input autocomplete="off" type="text" name="form[]" data-value="Код" class="input">
+						</div>
+					</div>
+					<div class="form-verifi__item">
+						<div class="form-verifi__submit-wrap">
+							<button class="btn-submit" type="submit"><span>Верефицироваться</span></button>
+						</div>
+					</div>
+					<div class="form-verifi__bottom">
+						<span>Не пришел код?</span>
+						<a href="#">Повторить </a>или<a href="#">Изменить номер телефона</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+    <div class="popup popupOrder" id="orderPopup">
+	<div class="popup_body">
+			<div class="close-popup-btn close-popup">
+				<img src="img/icons/close.svg" alt="close">
+			</div>
+		<div class="popup_content">
+			<div class="popup_form-wrap">
+				<form action="/" class="form-order2">
+
+					<div class="form-order2__inner">
+						<div class="form-order2__column form-order2__column_1">
+							<div class="form-order2__img ibg" data-da="form-order2__column_2,2,767">
+								<figure>
+									<img src="img/delivery/food.jpg" alt="">
+								</figure>
+							</div>
+						</div>
+						<div class="form-order2__column form-order2__column_2">
+							<div class="form-order2__title">
+								Битые огурцы
+							</div>
+							<div class="form-order2__desc">
+								Огурцы, маринованные в рисовом уксусе с апельсиновым соусом, чесноком, чили соусом и ким чи соусом
+							</div>
+
+							<div class="item-order__quantity">
+								<div class="item-order__minus"></div>
+								<input class="item-order__count" type="text" value="1"> 
+								<div class="item-order__plus"></div>
+							</div>
+							<div class="form-order2__price">
+								1000 руб
+							</div>
+							<div class="form-order2__submit-wrap">
+								<button class="aside-btn" type="submit"><span>оформить заказ</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-order2__comment comment-form-order2">
+						<div class="comment-form-order2__title">
+							Комментарий к заказу
+						</div>
+						<div class="comment-form-order2__subtitle">
+							до 500 символов
+						</div>
+						<textarea class="comment-form-order2__mess"></textarea>
 					</div>
 				</form>
 			</div>

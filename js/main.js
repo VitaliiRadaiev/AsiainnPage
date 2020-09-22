@@ -768,6 +768,26 @@ $(document).ready(function() {
 		})
 	}
 }
+
+{
+	let popupOrder = document.querySelector('.form-order2');
+	if(popupOrder) {
+		popupOrder.querySelectorAll('.item-order__quantity').forEach((item) => {
+			item.addEventListener('click', (e) => {
+
+				if(e.target.closest('.item-order__plus')) {
+					item.querySelector('input').value = +item.querySelector('input').value + 1;
+				}
+
+				if(e.target.closest('.item-order__minus')) {
+					if(item.querySelector('input').value > 1) {
+						item.querySelector('input').value = +item.querySelector('input').value - 1;
+					}
+				}
+			})
+		})
+	}
+}
 // === // order-list ==================================================================
 
 

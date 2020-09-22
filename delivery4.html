@@ -11,81 +11,232 @@
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
-		<div class="wrapper delivery2">
+		<div class="wrapper delivery4">
 			<main class="page">
 				<section class="delivery">
-					<div class="delivery__head head-delivery head-delivery_2">
+					<div class="delivery__head head-delivery head-delivery_3">
 						<div class="head-delivery__link-back">
 							<a class="" href="#">Назад</a>
 						</div>
-						<div class="head-delivery__logo logo">
-							<a href="#">
-								<img src="img/logo/Logo.svg" alt="">
-							</a>
+						<div class="head-delivery__title">
+							Оформление заказа
 						</div>
 						<div class="head-delivery__btn">
-							<a class="head-delivery-btn brown-btn" href="#">Вход<span>/</span>Регистрация</a>
+							<a class="head-delivery-btn brown-btn isAuthorized" href="#">Вход<span>/</span>Регистрация</a>
 						</div>
 					</div>
 
-					<div class="delivery__body body-delivery">
-						<div class="body-delivery__column body-delivery__column_1">
-							<div class="body-delivery__aside aside-delivery2">
-								<div class="aside-delivery2__top">
-									<div class="aside-delivery2__tab active">
-										Самовывоз
-									</div>
-									<div class="aside-delivery2__tab">
+					<form action="/" class="form-delivery4">
+						<div class="delivery__body body-delivery body-delivery_4">
+							<div class="body-delivery__column body-delivery__column_1">
+								<div class="order-box">
+									<div class="order-box__title">
 										Доставка
 									</div>
+									<div class="order-box__adress">
+										<span>Адрес</span> г. Москва, бульвар Генерала Карбышева, 15
+									</div>
+									<div class="order-box__map" id="map"></div>
+									<div class="order-box__time">
+										Время доставки: 19 сентября 18:30
+									</div>
 								</div>
-								<div class="aside-delivery2__bottom">
-									<div class="aside-delivery2__tab-content active aside-delivery2-anchor">
-										<div class="aside-delivery2__adress">
-											<p>
-												Ресторан пан азиатской кухни
-											</p>
-											<p>
-												г. Москва, бульвар Генерала Карбышева, 15
-											</p>
-										</div>
-										<div class="aside-delivery2__schedule">
-											<p>
-												ПН - ПТ с 12:00 - 00:00
-											</p>
-											<p>
-												СБ - ВС с 10:00 - 00:00
-											</p>
-										</div>
-										<div class="aside-delivery2__btn-order">
-											<a class="aside-btn" href="#">Заказать</a>
+
+								<div class="order-box">
+									<div class="order-box__title">
+										Контактные данные
+									</div>
+									<div class="order-box__input order-box__input_name">
+										<div class="order-box__input-wrap">
+											<input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input">
 										</div>
 									</div>
-									<div class="aside-delivery2__tab-content">
-										<form action="/" class="aside-delivery2__form form-delivery2">
-											<div class="form-delivery2__inner">
+									<div class="order-box__input order-box__input_phone">
+										<div class="order-box__input-wrap">
+											<input autocomplete="off" type="text" name="form[]" data-value="Телефон" class="input">
+										</div>
+									</div>
+									<div class="order-box__input order-box__input_email">
+										<div class="order-box__input-wrap">
+											<input autocomplete="off" type="text" name="form[]" data-value="Email" class="input">
+										</div>
+									</div>
+								</div>
 
-												<div class="form-delivery2__input-wrap">
-													<input autocomplete="off" type="text" name="form[]" data-value="Укажите адрес доставки" class="input">
-												</div>
-
-												<div class="form-delivery2__submit-wrap">
-													<button type="submit"><span><img src="img/icons/search.svg" alt=""></span></button>
+								<div class="order-box">
+									<div class="order-box__title">
+										Данные карты
+									</div>
+									<div class="order-box__inner">
+										<div class="order-box__input order-box__input-pay order-box__input-pay_card-num">
+											<div class="order-box__input-wrap">
+												<input autocomplete="off" type="text" name="form[]" data-value="&#183;&#183;&#183; &#183;&#183;&#183; &#183;&#183;&#183;" class="input _digital">
+											</div>
+										</div>
+										<div class="order-box__input order-box__input-pay order-box__input-pay_month">
+											<div class="order-box__input-wrap">
+												<div class="order-box_select-block">
+													<select name="select" class="order-box__select">
+														<option value="0" selected="selected">Месяц</option>
+														<option value="1">Январь</option>
+														<option value="2">Февраль</option>
+														<option value="3">Март</option>
+														<option value="4">Апрель</option>
+														<option value="5">Май</option>
+														<option value="6">Июнь</option>
+														<option value="7">Июль</option>
+														<option value="8">Август</option>
+														<option value="9">Сентябрь</option>
+														<option value="10">Октябрь</option>
+														<option value="11">Ноябрь</option>
+														<option value="12">Декабрь</option>
+													</select>
 												</div>
 											</div>
-										</form>
-										<div class="aside-delivery2__btn-order">
-											<a class="aside-btn" href="#">Заказать</a>
+										</div>
+										<div class="order-box__input order-box__input-pay order-box__input-pay_year">
+											<div class="order-box__input-wrap">
+												<div class="order-box_select-block">
+													<select name="select" class="order-box__select">
+														<option value="1" selected="selected">Год</option>
+														<option value="2">2020</option>
+														<option value="3">2021</option>
+														<option value="4">2022</option>
+														<option value="5">2023</option>
+														<option value="6">2024</option>
+														<option value="7">2025</option>
+													</select>
+												</div>
+											</div>
+										</div>		
+										<div class="order-box__input order-box__input-pay order-box__input-pay_cvv">
+											<div class="order-box__input-wrap">
+												<input autocomplete="off" type="text" name="form[]" data-value="CVV" class="input _digital">
+											</div>
 										</div>
 									</div>
 								</div>
+
+								<div class="order-box__submit-wrap">
+									<button class="aside-btn" type="submit"><span>Заказать</span> <span class="price">1000 руб</span></button>
+								</div>
+							</div>
+							<div class="body-delivery__column body-delivery__column_2" data-da="body-delivery__column_1,1,991">
+								<ul class="order-list">
+									<li class="item-order">
+										<div class="item-order__column item-order__column_1">
+											<figure class="item-order__photo ibg">
+												<img src="img/delivery/order-photo.png" alt="">
+											</figure>
+										</div>
+										<div class="item-order__column item-order__column_2">
+											<div class="item-order__title">
+												Поке с тунцом
+											</div>
+											<div class="item-order__quantity">
+												<div class="item-order__minus"></div>
+												<input class="item-order__count" type="text" value="1"> 
+												<div class="item-order__plus"></div>
+											</div>
+										</div>
+										<div class="item-order__column item-order__column_3">
+											<div class="item-order__price">
+												600 р
+											</div>
+											<div class="item-order__btn-box">
+												<div class="item-order__btn-change">
+													<a href="#">
+														<img src="img/icons/pencil2.svg">
+													</a>
+												</div>
+												<div class="item-order__btn-delete">
+													<a href="#">
+														<img src="img/icons/close2.svg">
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="item-order">
+										<div class="item-order__column item-order__column_1">
+											<figure class="item-order__photo ibg">
+												<img src="img/delivery/order-photo.png" alt="">
+											</figure>
+										</div>
+										<div class="item-order__column item-order__column_2">
+											<div class="item-order__title">
+												Поке с тунцом
+											</div>
+											<div class="item-order__quantity">
+												<div class="item-order__minus"></div>
+												<input class="item-order__count" type="text" value="1"> 
+												<div class="item-order__plus"></div>
+											</div>
+										</div>
+										<div class="item-order__column item-order__column_3">
+											<div class="item-order__price">
+												600 р
+											</div>
+											<div class="item-order__btn-box">
+												<div class="item-order__btn-change">
+													<a href="#">
+														<img src="img/icons/pencil2.svg">
+													</a>
+												</div>
+												<div class="item-order__btn-delete">
+													<a href="#">
+														<img src="img/icons/close2.svg">
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="item-order">
+										<div class="item-order__column item-order__column_1">
+											<figure class="item-order__photo ibg">
+												<img src="img/delivery/order-photo.png" alt="">
+											</figure>
+										</div>
+										<div class="item-order__column item-order__column_2">
+											<div class="item-order__title">
+												Поке с тунцом
+											</div>
+											<div class="item-order__quantity">
+												<div class="item-order__minus"></div>
+												<input class="item-order__count" type="text" value="1"> 
+												<div class="item-order__plus"></div>
+											</div>
+										</div>
+										<div class="item-order__column item-order__column_3">
+											<div class="item-order__price">
+												600 р
+											</div>
+											<div class="item-order__btn-box">
+												<div class="item-order__btn-change">
+													<a href="#">
+														<img src="img/icons/pencil2.svg">
+													</a>
+												</div>
+												<div class="item-order__btn-delete">
+													<a href="#">
+														<img src="img/icons/close2.svg">
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+
+								<ul class="basket__info-block">
+									<li>Стоимость <span>440 р</span></li>
+									<li>Доставка <span>60 р</span></li>
+									<li>Сумма <span>500 р</span></li>
+								</ul>
 							</div>
 						</div>
-						<div class="body-delivery__column body-delivery__column_2">
-							<div class="body-delivery__map" id="map" data-da="aside-delivery2-anchor,2,800"></div>
-						</div>
-					</div>
+					</form>
 				</section>
+
 			</main>
 		</div>
 		<div class="popup" id="tobookPopup">
