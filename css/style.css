@@ -5907,16 +5907,6 @@ textarea.input {
   position: relative;
 }
 
-.delivery5 .basket__info-block {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.delivery5 .basket__info-block > li:last-child {
-  margin-left: -18px;
-  margin-right: -9px;
-}
-
 .form-delivery4 {
   min-height: calc(100vh - 75px);
   padding-bottom: 15px;
@@ -6245,18 +6235,28 @@ textarea.input {
 
 .accordion {
   width: 100%;
+  background: #fff;
+  margin-bottom: 25px;
+  padding: 1px 0;
 }
 
-.accordion ul > li {
-  padding-left: 18px;
-  padding-right: 9px;
-}
-
-.accordion ul > li:not(:last-child) {
+.accordion > ul > li:not(:last-child) {
   border-bottom: 1px solid #cccccc;
 }
 
+.accordion__main-title {
+  font-family: "Akrobat";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 22px;
+  padding-left: 18px;
+  color: #383e43;
+}
+
 .accordion__title {
+  padding-left: 18px;
+  padding-right: 9px;
   min-height: 60px;
   position: relative;
   padding-right: 30px;
@@ -6276,7 +6276,7 @@ textarea.input {
   position: absolute;
   content: '';
   top: 50%;
-  right: 7px;
+  right: 15px;
   background: url(../img/icons/select-arrow2.svg) center/100% no-repeat;
   width: 15px;
   height: 10px;
@@ -6290,6 +6290,21 @@ textarea.input {
   display: none;
   font-weight: 400;
   padding: 15px 0;
+}
+
+.accordion__collapse .order-list {
+  padding-top: 0;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.accordion__collapse .order-list > li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 13px;
+}
+
+.accordion__collapse .basket__info-block {
+  margin-bottom: 0;
 }
 
 .contact-map {
@@ -6907,6 +6922,10 @@ textarea.input {
 
   .body-delivery_4 .body-delivery__column_2 {
     padding-left: 0;
+  }
+
+  .accordion {
+    margin-top: 10px;
   }
 }
 
