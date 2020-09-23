@@ -5845,7 +5845,7 @@ textarea.input {
   margin-bottom: 38px;
 }
 
-.basket__info-block li {
+.basket__info-block > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5858,16 +5858,16 @@ textarea.input {
   font-weight: 400;
 }
 
-.basket__info-block li:not(:last-child) {
+.basket__info-block > li:not(:last-child) {
   margin-bottom: 11px;
 }
 
-.basket__info-block li:last-child {
+.basket__info-block > li:last-child {
   font-weight: 700;
   color: #2d2f31;
 }
 
-.basket__info-block li > span {
+.basket__info-block > li > span {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -5907,9 +5907,26 @@ textarea.input {
   position: relative;
 }
 
+.delivery5 .basket__info-block {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.delivery5 .basket__info-block > li:last-child {
+  margin-left: -18px;
+  margin-right: -9px;
+}
+
 .form-delivery4 {
-  min-height: 100vh;
-  padding-bottom: 75px;
+  min-height: calc(100vh - 75px);
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .body-delivery_4 {
@@ -5921,10 +5938,26 @@ textarea.input {
 
 .body-delivery_4.delivery__body {
   min-height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .body-delivery_4 .body-delivery__column {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body-delivery_4 .body-delivery__column .expand {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .body-delivery_4 .body-delivery__column_1 {
@@ -5962,22 +5995,39 @@ textarea.input {
   padding-left: 24px;
   line-height: 22px;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.order-box__adress:before {
+.order-box__adress .text-wrap > span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+.order-box__adress .text-wrap:before {
   position: absolute;
   content: '';
-  top: 0;
+  top: 50%;
   left: 0;
   width: 17px;
   height: 22px;
   background: url("../img/icons/location2.svg") center no-repeat;
   background-size: contain;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.order-box__adress > span {
-  font-size: 16px;
-  font-weight: 400;
+.order-box__adress .banner-delivery__btn-change {
+  margin: 10px 0 15px 10px;
 }
 
 .order-box__map {
@@ -5998,6 +6048,14 @@ textarea.input {
   padding: 0 15px;
 }
 
+.order-box__input label {
+  color: #a5a5a5;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+}
+
 .order-box__input_name .order-box__input-wrap:before {
   background: url(../img/icons/user3.png) center no-repeat;
 }
@@ -6008,6 +6066,16 @@ textarea.input {
 
 .order-box__input_email .order-box__input-wrap:before {
   background: url(../img/icons/arroba.svg) center no-repeat;
+  background-size: contain;
+  height: 37%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.order-box__input_birthday .order-box__input-wrap:before {
+  background: url(../img/icons/calendar2.svg) center no-repeat;
   background-size: contain;
   height: 37%;
   top: 50%;
@@ -6082,7 +6150,7 @@ textarea.input {
 }
 
 .order-box__input-pay_month .order-box__input-wrap:before {
-  background: url(../img/icons/calendar.svg) center no-repeat;
+  background: url(../img/icons/calendar2.svg) center no-repeat;
   background-size: contain;
   height: 37%;
   top: 50%;
@@ -6099,7 +6167,7 @@ textarea.input {
 }
 
 .order-box__input-pay_year .order-box__input-wrap:before {
-  background: url(../img/icons/calendar.svg) center no-repeat;
+  background: url(../img/icons/calendar2.svg) center no-repeat;
   background-size: contain;
   height: 37%;
   top: 50%;
@@ -6173,6 +6241,55 @@ textarea.input {
 
 .order-box__submit-wrap .aside-btn > span.price {
   margin-left: 15px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion ul > li {
+  padding-left: 18px;
+  padding-right: 9px;
+}
+
+.accordion ul > li:not(:last-child) {
+  border-bottom: 1px solid #cccccc;
+}
+
+.accordion__title {
+  min-height: 60px;
+  position: relative;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2d2f31;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.accordion__title:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 7px;
+  background: url(../img/icons/select-arrow2.svg) center/100% no-repeat;
+  width: 15px;
+  height: 10px;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.accordion__collapse {
+  display: none;
+  font-weight: 400;
+  padding: 15px 0;
 }
 
 .contact-map {
@@ -7048,6 +7165,10 @@ textarea.input {
     padding: 0 15px;
   }
 
+  .form-delivery4 {
+    min-height: calc(100vh - 60px);
+  }
+
   .body-delivery_4 .body-delivery__column_2 {
     display: block;
   }
@@ -7172,6 +7293,16 @@ textarea.input {
   .banner-event__text {
     font-size: calc(8px + (6 + 6 * 0.7) * ((100vw - 320px) / 814));
     line-height: calc(8px + (6 + 6 * 0.7) * ((100vw - 320px) / 814));
+  }
+
+  .order-box__adress {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .order-box__adress .text-wrap > span {
+    font-size: 13px;
+    margin-right: 10px;
   }
 
   .contact .footer {
@@ -7738,7 +7869,7 @@ textarea.input {
     margin-bottom: 16px;
   }
 
-  .basket__info-block li {
+  .basket__info-block > li {
     font-size: 14px;
   }
 

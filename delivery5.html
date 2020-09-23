@@ -1,0 +1,444 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+ 	<head>
+ 		<meta charset="UTF-8">
+ 		<title>Asiainn</title>
+ 		<meta name="format-detection" content="telephone=no">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<!-- <meta name="robots" content="noindex, nofollow"> -->
+ 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+ 		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+ 		<link rel="stylesheet" href="css/style.min.css">
+ 	</head>
+ 	<body>
+ 		<div class="wrapper delivery4 delivery5">
+ 			<main class="page">
+ 				<section class="delivery">
+ 					<div class="delivery__head head-delivery head-delivery_3">
+ 						<div class="head-delivery__link-back">
+ 							<a class="" href="#">Назад</a>
+ 						</div>
+ 						<div class="head-delivery__title">
+ 							Оформление заказа
+ 						</div>
+ 						<div class="head-delivery__btn">
+ 							<a class="head-delivery-btn brown-btn isAuthorized" href="#">Вход<span>/</span>Регистрация</a>
+ 						</div>
+ 					</div>
+
+ 					<form action="/" class="form-delivery4">
+ 						<div class="delivery__body body-delivery body-delivery_4">
+ 							<div class="body-delivery__column body-delivery__column_1">
+ 								<div class="order-box">
+ 									<div class="order-box__title">
+ 										Доставка
+ 									</div>
+ 									<div class="order-box__adress">
+ 										<div class="text-wrap">
+ 											<span>Адрес</span> г. Москва, бульвар Генерала Карбышева, 15
+ 										</div>
+
+ 										<div class="banner-delivery__btn-change">
+ 											<a class="brown-btn" href="#">Изменить</a>
+ 										</div>
+ 									</div>
+ 									<div class="order-box__map" id="map"></div>
+ 									<div class="order-box__time">
+ 										Время доставки: 19 сентября 18:30
+ 									</div>
+ 								</div>
+
+ 								<div class="order-box">
+ 									<div class="order-box__title">
+ 										Контактные данные
+ 									</div>
+ 									<div class="order-box__input order-box__input_name">
+ 										<div class="order-box__input-wrap">
+ 											<input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input">
+ 										</div>
+ 									</div>
+ 									<div class="order-box__input order-box__input_phone">
+ 										<div class="order-box__input-wrap">
+ 											<input autocomplete="off" type="text" name="form[]" data-value="Телефон" class="input">
+ 										</div>
+ 									</div>
+ 									<div class="order-box__input order-box__input_email">
+ 										<div class="order-box__input-wrap">
+ 											<input autocomplete="off" type="text" name="form[]" data-value="Email" class="input">
+ 										</div>
+ 									</div>
+ 									<div class="order-box__input order-box__input_birthday">
+ 										<label for="birthday">День рождения</label>
+ 										<div class="order-box__input-wrap">
+ 											<input autocomplete="off" id="birthday" type="text" name="form[]" data-value="14.02.1981" class="input">
+ 										</div>
+ 									</div>
+ 								</div>
+
+ 								<div class="expand"></div>
+
+ 								<div class="order-box__submit-wrap">
+ 									<button class="aside-btn" type="submit"><span>Сохранить</span> <span class="price">1000 руб</span></button>
+ 								</div>
+ 							</div>
+ 							<div class="body-delivery__column body-delivery__column_2" data-da="body-delivery__column_1,1,991">
+ 								<ul class="order-list">
+ 									<li class="item-order">
+ 										<div class="item-order__column item-order__column_1">
+ 											<figure class="item-order__photo ibg">
+ 												<img src="img/delivery/order-photo.png" alt="">
+ 											</figure>
+ 										</div>
+ 										<div class="item-order__column item-order__column_2">
+ 											<div class="item-order__title">
+ 												Поке с тунцом
+ 											</div>
+ 											<div class="item-order__quantity">
+ 												<div class="item-order__minus"></div>
+ 												<input class="item-order__count" type="text" value="1"> 
+ 												<div class="item-order__plus"></div>
+ 											</div>
+ 										</div>
+ 										<div class="item-order__column item-order__column_3">
+ 											<div class="item-order__price">
+ 												600 р
+ 											</div>
+ 											<div class="item-order__btn-box">
+ 												<div class="item-order__btn-change">
+ 													<a href="#">
+ 														<img src="img/icons/pencil2.svg">
+ 													</a>
+ 												</div>
+ 												<div class="item-order__btn-delete">
+ 													<a href="#">
+ 														<img src="img/icons/close2.svg">
+ 													</a>
+ 												</div>
+ 											</div>
+ 										</div>
+ 									</li>
+ 									<li class="item-order">
+ 										<div class="item-order__column item-order__column_1">
+ 											<figure class="item-order__photo ibg">
+ 												<img src="img/delivery/order-photo.png" alt="">
+ 											</figure>
+ 										</div>
+ 										<div class="item-order__column item-order__column_2">
+ 											<div class="item-order__title">
+ 												Поке с тунцом
+ 											</div>
+ 											<div class="item-order__quantity">
+ 												<div class="item-order__minus"></div>
+ 												<input class="item-order__count" type="text" value="1"> 
+ 												<div class="item-order__plus"></div>
+ 											</div>
+ 										</div>
+ 										<div class="item-order__column item-order__column_3">
+ 											<div class="item-order__price">
+ 												600 р
+ 											</div>
+ 											<div class="item-order__btn-box">
+ 												<div class="item-order__btn-change">
+ 													<a href="#">
+ 														<img src="img/icons/pencil2.svg">
+ 													</a>
+ 												</div>
+ 												<div class="item-order__btn-delete">
+ 													<a href="#">
+ 														<img src="img/icons/close2.svg">
+ 													</a>
+ 												</div>
+ 											</div>
+ 										</div>
+ 									</li>
+ 									<li class="item-order">
+ 										<div class="item-order__column item-order__column_1">
+ 											<figure class="item-order__photo ibg">
+ 												<img src="img/delivery/order-photo.png" alt="">
+ 											</figure>
+ 										</div>
+ 										<div class="item-order__column item-order__column_2">
+ 											<div class="item-order__title">
+ 												Поке с тунцом
+ 											</div>
+ 											<div class="item-order__quantity">
+ 												<div class="item-order__minus"></div>
+ 												<input class="item-order__count" type="text" value="1"> 
+ 												<div class="item-order__plus"></div>
+ 											</div>
+ 										</div>
+ 										<div class="item-order__column item-order__column_3">
+ 											<div class="item-order__price">
+ 												600 р
+ 											</div>
+ 											<div class="item-order__btn-box">
+ 												<div class="item-order__btn-change">
+ 													<a href="#">
+ 														<img src="img/icons/pencil2.svg">
+ 													</a>
+ 												</div>
+ 												<div class="item-order__btn-delete">
+ 													<a href="#">
+ 														<img src="img/icons/close2.svg">
+ 													</a>
+ 												</div>
+ 											</div>
+ 										</div>
+ 									</li>
+ 								</ul>
+
+ 								<ul class="basket__info-block">
+ 									<li>Стоимость <span>440 р</span></li>
+ 									<li>Доставка <span>60 р</span></li>
+ 									<li>Сумма <span>500 р</span></li>
+ 									<li>
+ 										<div class="accordion _spollers _one">
+
+ 											<ul>
+ 												<li>
+ 													<div class="accordion__title _spoller">
+ 														14 сентября 2020
+ 													</div>
+ 													<div class="accordion__collapse">
+ 														Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
+ 													</div>
+ 												</li>
+ 												<li>
+ 													<div class="accordion__title _spoller">
+ 														12 сентября 2020
+ 													</div>
+ 													<div class="accordion__collapse">
+ 														Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
+ 													</div>
+ 												</li>
+ 												<li>
+ 													<div class="accordion__title _spoller">
+ 														14 сентября 2020
+ 													</div>
+ 													<div class="accordion__collapse">
+ 														Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
+ 													</div>
+ 												</li>
+ 												<li>
+ 													<div class="accordion__title _spoller">
+ 														12 сентября 2020
+ 													</div>
+ 													<div class="accordion__collapse">
+ 														Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
+ 													</div>
+ 												</li>
+ 											</ul>
+ 										</div>
+ 									</li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</form>
+ 				</section>
+
+ 			</main>
+ 		</div>
+ 		<div class="popup" id="tobookPopup">
+	<div class="popup_body">
+		<div class="popup_content">
+			<div class="close-popup-btn close-popup">
+				<img src="img/icons/close.svg" alt="close">
+			</div>
+			<div class="popup_form-wrap">
+				<form class="form-order">
+					<div class="form-order__title">
+						Забронировать столик
+					</div>
+					<div class="form-order__wrap">
+						<div class="form-order__item">
+							<div class="form-order__item-wrap">
+								<div class="form-order_select-block">
+									<select name="select" class="form-order__select">
+										<option value="1" selected="selected">Количество</option>
+										<option value="2">1 человек</option>
+										<option value="3">2 человека</option>
+										<option value="4">3 человека</option>
+										<option value="5">4 человека</option>
+										<option value="5">5 человек</option>
+										<option value="5">6 человек</option>
+										<option value="5">7 человек</option>
+										<option value="5">8 человек</option>
+										<option value="5">9 человек</option>
+										<option value="5">10 человек</option>
+										<option value="5">11 человек</option>
+										<option value="5">12 человек</option>
+										<option value="5">13 человек</option>
+										<option value="5">14 человек</option>
+										<option value="5">15 человек</option>
+										<option value="5">16 человек</option>
+										<option value="5">17 человек</option>
+										<option value="5">18 человек</option>
+										<option value="5">19 человек</option>
+										<option value="5">20 человек</option>
+										<option value="5">Больше</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-order__item">
+							<div class="form-order__item-wrap">
+								<input autocomplete="off" id="date" type="text" name="form[]" data-value="Дата" class="input _date">
+							</div>
+						</div>
+						<div class="form-order__item">
+							<div class="form-order__item-wrap">
+								<div class="form-order_select-block">
+									<select name="select" class="form-order__select">
+										<option value="1" selected="selected">Время</option>
+										<option value="2">8:00</option>
+										<option value="3">8:30</option>
+										<option value="4">9:00</option>
+										<option value="5">9:30</option>
+										<option value="5">10:00</option>
+										<option value="5">10:30</option>
+										<option value="5">11:00</option>
+										<option value="5">11:30</option>
+										<option value="5">12:00</option>
+										<option value="5">12:30</option>
+										<option value="5">13:00</option>
+										<option value="5">13:30</option>
+										<option value="5">14:00</option>
+										<option value="5">14:30</option>
+										<option value="5">15:00</option>
+										<option value="5">15:30</option>
+										<option value="5">16:00</option>
+										<option value="5">16:30</option>
+										<option value="5">17:00</option>
+										<option value="5">17:30</option>
+										<option value="5">18:00</option>
+										<option value="5">18:30</option>
+										<option value="5">19:00</option>
+										<option value="5">19:30</option>
+										<option value="5">20:00</option>
+										<option value="5">20:30</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-order__wrap">
+						<div class="form-order__item form-order__item_m">
+							<div class="form-order__item-wrap">
+								<input autocomplete="off" type="text" name="form[]" data-value="Ваше имя" class="input  _req">
+							</div>
+						</div>
+
+						<div class="form-order__item form-order__item_m">
+							<div class="form-order__item-wrap">
+								<input autocomplete="off" type="text" name="form[]" data-value="Ваш телефон" class="input _phone _req">
+							</div>
+						</div>
+					</div>
+					<div class="form-order__submit-wrap">
+						<button class="btn-submit" type="submit"><span>Забронировать</span></button>
+					</div>
+					<div class="form-order__mess">
+						* Нажимая на кнопку я соглашаюсь с политикой конфеденциальности
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+ 		<div class="popup popupMess" id="popupMess">
+	<div class="popup_body">
+		<div class="popup_content">
+			<div class="close-popup close-popup-btn">
+				<img src="img/icons/close.svg" alt="close">
+			</div>	
+			<div class="popup__title">
+				Спасибо!
+			</div>
+			<div class="popup__text">
+				Наш менеджер свяжется с вами в ближайшее время
+			</div>
+			<div class="popup__btn">
+				<a href="#" class="btn-submit close-popup">Хорошо</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+ 		<div class="popup popupRegistering" id="registeringPopup">
+	<div class="popup_body">
+		<div class="popup_content">
+			<div class=" close-popup-btn close-popup">
+				<img src="img/icons/close.svg" alt="close">
+			</div>
+			<div class="popup_form-wrap">
+				<form action="/" class="form-regist-log">
+					<div class="form-regist-log__title">
+						<a href="#registeringPopup" class="registering popup-link active">Регстрация</a>
+						<a href="#loginPopup" class="login popup-link">Вход</a>
+					</div>
+					<div class="form-regist-log__item form-regist-log__item_name">
+						<div class="form-regist-log__item-wrap">
+							<input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input  _req">
+						</div>
+					</div>
+					<div class="form-regist-log__item form-regist-log__item_phone">
+						<div class="form-regist-log__item-wrap">
+							<input autocomplete="off" type="text" name="form[]" data-value="Телефон" class="input _phone _req">
+						</div>
+					</div>
+					<div class="form-regist-log__item">
+						<div class="form-regist-log__submit-wrap">
+							<button type="submit"><span>ЗАРЕГЕСТРИРОВАТЬСЯ</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+ 		<div class="popup popupLogin" id="loginPopup">
+	<div class="popup_body">
+		<div class="popup_content">
+			<div class="close-popup-btn close-popup">
+				<img src="img/icons/close.svg" alt="close">
+			</div>
+			<div class="popup_form-wrap">
+				<form action="/" class="form-regist-log">
+					<div class="form-regist-log__title">
+						<a href="#registeringPopup" class="registering popup-link">Регстрация</a>
+						<a href="#loginPopup" class="login popup-link active">Вход</a>
+					</div>
+					<div class="form-regist-log__item form-regist-log__item_name">
+						<div class="form-regist-log__item-wrap">
+							<input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input  _req">
+						</div>
+					</div>
+					<div class="form-regist-log__item form-regist-log__item_phone">
+						<div class="form-regist-log__item-wrap">
+							<input autocomplete="off" type="text" name="form[]" data-value="Телефон" class="input _phone _req">
+						</div>
+					</div>
+					<div class="form-regist-log__item">
+						<div class="form-regist-log__submit-wrap">
+							<button class="btn-submit" type="submit"><span>ЗАРЕГЕСТРИРОВАТЬСЯ</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+ 		<script src="js/libs.min.js"></script>
+ 		<script
+ 		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+ 		  defer
+ 		></script>
+ 		<script src="js/main.min.js"></script>
+ 	</body>
+ </html>
