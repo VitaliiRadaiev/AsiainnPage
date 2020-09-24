@@ -1409,6 +1409,16 @@ h6 {
   background: url(../img/icons/phone.png) center no-repeat;
 }
 
+.form-regist-log__item_email .form-regist-log__item-wrap:before {
+  background: url(../img/icons/arroba.svg) center no-repeat;
+  background-size: contain;
+  height: 37%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .form-regist-log__item-wrap {
   width: 100%;
   min-height: 50px;
@@ -1725,6 +1735,15 @@ h6 {
   min-height: 50px;
   padding: 10px;
   background: #fff;
+}
+
+.agreement {
+  color: #2d2f31;
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 561px;
+  margin: 25px auto;
 }
 
 body.compensate-for-scrollbar {
